@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/css/tempusdominus-bootstrap-4.css"
+  integrity="sha512-ClXpwbczwauhl7XC16/EFu3grIlYTpqTYOwqwAi7rNSqxmTqCpE8VS3ovG+qi61GoxSLnuomxzFXDNcPV1hvCQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@latest/min/moment-with-locales.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.39.0/js/tempusdominus-bootstrap-4.js"
+  integrity="sha512-1+GNKHQ9yw2vSBLvpsquZDJh0ktonnPGPkYBNd7Xh85jnvibX7MQaVLQEeTQBhcSSFLYu6DAefDsn/KFQo/YNQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<script src="js/request.js"></script>
+
+<nav class="navbar">
+  <a class="navbar__link" href="#about">about</a>
+  <a class="navbar__link" href="#projects">projects</a>
+  <a class="navbar__link" href="#skills">tools</a>
+  <a class="navbar__link" href="#contacts">contacts</a>
+</nav>
+
+<!-- START About -->
+<div class="about" id="about">
+  <div class="about__wrapper">
+    <h1 class="about__title">Hi, my name is Verners</h1>
+    <p class="about__text">I am a full-stack web developer in the making.</p>
+    <p class="about__text">
+      For more than 10 years my workday revolved around large scale digital
+      printing. The past 7 years I was responsible for all the stages of
+      production - print file adjustment, operating and maintaining printer
+      equipment when needed, planning the workflow of team's daily tasks, and
+      quality of the finished product.
+    </p>
+    <a class="about__cv-download" href="images/CV_Verners.pdf" download="cv.pdf"
+      >download cv</a
+    >
+  </div>
+</div>
+<!-- END About -->
+
+<!-- START Projects -->
+<div class="projects" id="projects">
+  <div class="projects__wrapper">
+    <h1 class="projects__title">projects</h1>
+    <div class="projects__list">
+      <!-- projects item1 -->
+      <div class="projects__item">
+        <div class="projects__head">
+          <h4>Front page - Instagram</h4>
+          <a href="content/instagram/index.html" target="_blank">
+            <img
+              class="projects__img"
+              src="images/instagram_prev.png"
+              alt="instagram index page preview"
+            />
+          </a>
+        </div>
+        <div class="projects__info">
+          <div class="projects__logos">
+            <img src="images/html5.svg" alt="" />
+            <img src="images/css3.svg" alt="" />
+            <img src="images/sass.svg" alt="" />
+          </div>
+          <a
+            class="projects__code"
+            href="https://github.com/VernersSka/instagram"
+            target="_blank"
+          >
+            see code
+          </a>
+        </div>
+      </div>
+      <!-- projects item2 -->
+      <div class="projects__item">
+        <div class="projects__head">
+          <h4>Front page - LinkedIn</h4>
+          <a href="content/linkedin/index.html" target="_blank">
+            <img
+              class="projects__img"
+              src="images/linkedin_prev.png"
+              alt="linkedin index page preview"
+            />
+          </a>
+        </div>
+        <div class="projects__info">
+          <div class="projects__logos">
+            <img src="images/html5.svg" alt="" />
+            <img src="images/css3.svg" alt="" />
+            <img src="images/sass.svg" alt="" />
+          </div>
+          <a
+            class="projects__code"
+            href="https://github.com/VernersSka/linkedin"
+            target="_blank"
+          >
+            see code
+          </a>
+        </div>
+      </div>
+      <!-- projects item3 -->
+      <div class="projects__item">
+        <div class="projects__head">
+          <h4>Game - TicTacToe</h4>
+          <a href="content/tictactoe/tictactoe.php" target="_blank">
+            <img
+              class="projects__img"
+              src="images/tictactoe_prev.png"
+              alt="'TicTacToe' game printscreen"
+            />
+          </a>
+        </div>
+        <div class="projects__info">
+          <div class="projects__logos">
+            <img src="images/html5.svg" alt="" />
+            <img src="images/css3.svg" alt="" />
+            <img src="images/sass.svg" alt="" />
+            <img src="images/php.svg" alt="" />
+          </div>
+          <a
+            class="projects__code"
+            href="https://github.com/VernersSka/tictactoe"
+            target="_blank"
+          >
+            see code
+          </a>
+        </div>
+      </div>
+      <!-- projects item4 -->
+      <div class="projects__item">
+        <div class="projects__head">
+          <h4>Game - Four in line</h4>
+          <a href="content/fourinline/four_in_line.php" target="_blank">
+            <img
+              class="projects__img"
+              src="images/four-in-line_prev.png"
+              alt="'Four in line' game printscreen"
+            />
+          </a>
+        </div>
+
+        <div class="projects__info">
+          <div class="projects__logos">
+            <img src="images/html5.svg" alt="" />
+            <img src="images/css3.svg" alt="" />
+            <img src="images/sass.svg" alt="" />
+            <img src="images/php.svg" alt="" />
+          </div>
+          <a
+            class="projects__code"
+            href="https://github.com/VernersSka/four_in_line"
+            target="_blank"
+          >
+            see code
+          </a>
+        </div>
+      </div>
+      <!-- projects item5 -->
+      <div class="projects__item">
+        <div class="projects__head">
+          <h4>To do list</h4>
+          <a href="content/todo_list/index.php" target="_blank">
+            <img
+              class="projects__img"
+              src="images/todo-list_prev.png"
+              alt="'To-do list' app printscreen"
+            />
+          </a>
+        </div>
+        <div class="projects__info">
+          <div class="projects__logos">
+            <img src="images/html5.svg" alt="" />
+            <img src="images/css3.svg" alt="" />
+            <img src="images/php.svg" alt="" />
+            <img src="images/js.svg" alt="" />
+            <img src="images/mysql.svg" alt="" />
+            <img src="images/bootstrap.svg" alt="" />
+          </div>
+          <a
+            class="projects__code"
+            href="https://github.com/VernersSka/todo_list"
+            target="_blank"
+          >
+            see code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Projects -->
+
+<!-- START Skills -->
+<div class="skills" id="skills">
+  <div class="skills__wrapper">
+    <h1 class="skills__title">tools i use</h1>
+    <div class="skills__section-top">
+      <div class="skills__item">
+        <img src="images/html5.svg" alt="html5 logo" class="skills__logo" />
+        <p class="skills__logo-name">html5</p>
+      </div>
+      <div class="skills__item">
+        <img src="images/css3.svg" alt="css3 logo" class="skills__logo" />
+        <p class="skills__logo-name">css3</p>
+      </div>
+      <div class="skills__item">
+        <img src="images/sass.svg" alt="sass logo" class="skills__logo" />
+        <p class="skills__logo-name">sass</p>
+      </div>
+      <div class="skills__item">
+        <img src="images/php.svg" alt="php logo" class="skills__logo" />
+        <p class="skills__logo-name">php</p>
+      </div>
+    </div>
+    <div class="skills__section-bottom">
+      <div class="skills__item">
+        <img src="images/js.svg" alt="javascript logo" class="skills__logo" />
+        <p class="skills__logo-name">javascript</p>
+      </div>
+      <div class="skills__item">
+        <img
+          src="images/bootstrap.svg"
+          alt="bootstrap logo"
+          class="skills__logo"
+        />
+        <p class="skills__logo-name">bootstrap</p>
+      </div>
+      <div class="skills__item">
+        <img src="images/mysql.svg" alt="mysql logo" class="skills__logo" />
+        <p class="skills__logo-name">mysql</p>
+      </div>
+      <div class="skills__item">
+        <img src="images/git.svg" alt="git logo" class="skills__logo" />
+        <p class="skills__logo-name">git</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Skills -->
+
+<!-- START contacts -->
+<div class="contacts" id="contacts">
+  <div class="contacts__wrapper">
+    <h1 class="contacts__title">contacts</h1>
+    <div class="contacts__contact-method">
+      <form
+        action="../server/api.php?api=schedule"
+        class="contacts__schedule-form schedule_form"
+      >
+        <h4>Schedule a meeting</h4>
+        <label for="schedule-name">Your name</label>
+        <input type="text" name="name" id="schedule-name" required />
+        <br />
+        <label for="schedule-email">Your email</label>
+        <input type="email" name="email" id="schedule-email" required />
+        <br />
+        <label for="schedule-time">Time you want to schedule</label>
+
+        <div
+          class="input-group date contacts__calendar"
+          id="datetimepicker"
+          data-target-input="nearest"
+        >
+          <input
+            type="text"
+            class="form-control datetimepicker-input"
+            id="schedule-time"
+            name="schedule-time"
+            data-target="#datetimepicker"
+          />
+          <div
+            class="input-group-append"
+            data-target="#datetimepicker"
+            data-toggle="datetimepicker"
+          >
+            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div class="contacts__comment-add-section">
+        <h4>Leave a comment</h4>
+        <form action="../server/api.php?api=add" class="comment_form">
+          <label for="comment-author">Name</label>
+          <input type="text" name="author" id="comment-author" required />
+          <br />
+          <label for="comment-text">Comment</label>
+          <br />
+          <textarea
+            type="text"
+            name="message"
+            id="comment-text"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+          <br />
+          <button type="submit">Add comment</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- comment carousel START -->
+    <div class="contacts__carousel">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner" id="comment_list">
+          <div class="carousel-item template">
+            <p class="contacts__comment-text">TEMPLATE COMMENT</p>
+            <h6 class="contacts__comment-author">TEMPLATE author</h6>
+          </div>
+
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- comment carousel END -->
+
+    <div class="contacts__link-container">
+      <a
+        href="https://github.com/VernersSka/"
+        class="contacts__link"
+        target="_blank"
+      >
+        <img src="images/GitHub_Logo.png" alt="GitHub Logo" />
+      </a>
+      <a
+        href="https://www.linkedin.com/"
+        class="contacts__link"
+        target="_blank"
+      >
+        <img src="images/LI-In-Bug.png" alt="LinkedIn Logo" />
+      </a>
+    </div>
+  </div>
+  <!-- END contact -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="js/script.js"></script>
+</div>
