@@ -40,10 +40,10 @@ if (isset($_REQUEST['api'])) {
     echo json_encode($comment_list);
   }
 
-  elseif ($_REQUEST['api'] === 'getTimes') {
-    $taken_times = $schedule->getSelectData('time');
-    echo json_encode($taken_times);
-  }
+  // elseif ($_REQUEST['api'] === 'getTimes') {
+  //   $taken_times = $schedule->getSelectData('time');
+  //   echo json_encode($taken_times);
+  // }
 
   elseif ($_REQUEST['api'] === 'add') {
     if (

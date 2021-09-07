@@ -54,22 +54,30 @@ class DB
     }
   }
 
-  public function getSelectData($column) {
-    $sql = "SELECT id, $column FROM `$this->table_name`";
-    $result = $this->conn->query($sql);
+  /**
+   * paņem no DB jau aizņemtos laikus
+   * 
+   */
+  // šo izmantotu, lai vienam laikam nevar pieteikties vairāki lietotāji, bet izvēlētais date-picker nepiedāvā 
+  // tik smalku laika atlasi. pagaidām labākas alternatīvas neatrodu
+
+  
+  // public function getSelectData($column) {
+  //   $sql = "SELECT id, $column FROM `$this->table_name`";
+  //   $result = $this->conn->query($sql);
     
-    if ($result->num_rows > 0) {
-      $data = $result->fetch_all(MYSQLI_ASSOC);
-      $times_taken = [];
-      foreach ($data as $row) {
-        $id = $row['id'];
-        unset($row['id']);
-        $times_taken[$id] = $row['time'];
-      }
-    }
+  //   if ($result->num_rows > 0) {
+  //     $data = $result->fetch_all(MYSQLI_ASSOC);
+  //     $times_taken = [];
+  //     foreach ($data as $row) {
+  //       $id = $row['id'];
+  //       unset($row['id']);
+  //       $times_taken[$id] = $row['time'];
+  //     }
+  //   }
     
-    return $times_taken;
-  }
+  //   return $times_taken;
+  // }
 
 
   /**
