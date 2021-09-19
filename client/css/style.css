@@ -24,7 +24,7 @@ body {
   position: sticky;
   background: #fff;
   top: 0;
-  z-index: 3;
+  z-index: 999;
   height: 55px;
   border-bottom: 1px solid #6d6d6d;
 }
@@ -312,7 +312,7 @@ body {
 
 .contacts__comment-add-section, .contacts__schedule-form {
   margin: 1em;
-  padding: 0.5em;
+  padding: 1em;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 20px 0px #494949;
           box-shadow: 0px 0px 20px 0px #494949;
@@ -406,7 +406,10 @@ body {
     padding: 0;
   }
   .about__wrapper {
-    width: 90vw;
+    width: 80%;
+  }
+  .projects__wrapper {
+    width: 100%;
   }
   .projects__title {
     text-align: center;
@@ -423,7 +426,7 @@ body {
     max-width: 35px;
   }
   .skills__wrapper {
-    width: 90vw;
+    width: 100%;
   }
   .skills__title {
     text-align: center;
@@ -435,6 +438,9 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 5em;
             flex: 1 0 5em;
+  }
+  .contacts__wrapper {
+    width: 100%;
   }
   .contacts__title {
     text-align: center;
