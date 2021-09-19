@@ -31,9 +31,6 @@ request.get('../server/api.php?api=get', function (response) {
   template.parentNode.removeChild(template);
 });
 
-// request.get('../server/api.php?api=getTimes', function (response) {
-// });
-
 function displayComment(id, data) {
   let comment_block = document.querySelector('#comment_list');
   let template = comment_block.querySelector('.template');
@@ -41,10 +38,10 @@ function displayComment(id, data) {
   if (template === null) {
     template = comment_block.querySelector('.carousel-item');
     new_comment = template.cloneNode(true);
+    new_comment.classList.remove('active');
   } else {
     new_comment = template.cloneNode(true);
     new_comment.classList.remove('template');
-    new_comment.classList.add('carousel-item');
   }
 
   // piešķir 'active' klasi (vajadzīga, lai karuselis strādātu) tikai vienam komentāram
@@ -61,7 +58,7 @@ function displayComment(id, data) {
 
   new_comment.setAttribute('data-id', id);
 
-  comment_block.prepend(new_comment);
+  comment_block.append(new_comment);
 }
 
 $('#datetimepicker').datetimepicker({
