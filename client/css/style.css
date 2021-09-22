@@ -1,6 +1,16 @@
 html {
   scroll-behavior: smooth;
-  min-width: 620px;
+  min-width: 320px;
+}
+
+h1 {
+  font-size: 4.375em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 body {
@@ -70,7 +80,6 @@ body {
 
 .about__title {
   color: #999999;
-  font-size: 2em;
   font-weight: bold;
   margin: 0.67em 0;
 }
@@ -103,10 +112,7 @@ body {
 
 .projects__title {
   color: #999999;
-  font-size: 70px;
-  font-weight: bold;
   margin: 0.67em 0;
-  text-transform: uppercase;
   padding: 0;
 }
 
@@ -211,28 +217,22 @@ body {
 }
 
 .skills__title {
-  text-transform: uppercase;
   text-align: end;
-  font-size: 70px;
-  font-weight: bold;
   color: #999999;
   margin: 0.67em 0;
   padding: 0;
 }
 
-.skills__section-top, .skills__section-bottom {
+.skills__section {
   width: 80%;
-  min-width: 550px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: end;
 }
 
 .skills__item {
@@ -243,9 +243,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 10em;
-          flex: 1 1 10em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -263,7 +260,7 @@ body {
 
 .contacts {
   background: #e4e4e4;
-  padding: 20px 0 20px 0;
+  padding: 1px 0 20px 0;
   height: 800px;
 }
 
@@ -284,10 +281,7 @@ body {
 }
 
 .contacts__title {
-  text-transform: uppercase;
   text-align: start;
-  font-size: 70px;
-  font-weight: bold;
   color: #999999;
   margin: 0.67em 0;
   padding: 0;
@@ -431,13 +425,8 @@ body {
   .skills__title {
     text-align: center;
   }
-  .skills__section-top, .skills__section-bottom {
-    width: 100%;
-  }
-  .skills__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 5em;
-            flex: 1 0 5em;
+  .skills__section {
+    width: 90%;
   }
   .contacts__wrapper {
     width: 100%;
@@ -467,6 +456,73 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  .navbar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .navbar__link {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 0.75em;
+  }
+  .projects {
+    padding-top: 1em;
+  }
+  .projects__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 70%;
+    min-width: 12.5em;
+  }
+  .projects__img {
+    height: 10em;
+  }
+  .skills {
+    padding-top: 1em;
+  }
+  .skills__section {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .contacts {
+    padding-top: 1em;
+  }
+  .contacts__schedule-form, .contacts__comment-add-section {
+    width: 80%;
+  }
+  .contacts__schedule-form input,
+  .contacts__schedule-form textarea, .contacts__comment-add-section input,
+  .contacts__comment-add-section textarea {
+    width: 100%;
+  }
+  .contacts__calendar {
+    width: auto;
+  }
+  .contacts__carousel {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -58,7 +58,7 @@ function displayComment(id, data) {
 
   new_comment.setAttribute('data-id', id);
 
-  comment_block.append(new_comment);
+  comment_block.prepend(new_comment);
 }
 
 $('#datetimepicker').datetimepicker({

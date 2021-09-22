@@ -11,8 +11,8 @@ if (DEBUG_MODE) {
 header('Content-type: application/json');
 
 if (isset($_REQUEST['api'])) {
-  include __DIR__ .  "Schedule.php";
-  include __DIR__ .  "Comments.php";
+  include __DIR__ .  "/Schedule.php";
+  include __DIR__ .  "/Comments.php";
 
   $schedule = new Schedule();
   $comments = new Comments();

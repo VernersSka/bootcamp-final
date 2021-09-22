@@ -6,7 +6,17 @@ $link-grey: #494949;
 
 html {
   scroll-behavior: smooth;
-  min-width: 620px;
+  min-width: 320px;
+}
+
+h1 {
+  font-size: 4.375em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 body {
@@ -23,6 +33,8 @@ body {
   position: sticky;
   background: #fff;
   top: 0;
+
+  z-index: 999;
 
   height: 55px;
   border-bottom: 1px solid $text-grey;
@@ -67,7 +79,6 @@ body {
 
   &__title {
     color: $heading-grey;
-    font-size: 2em;
     font-weight: bold;
     margin: 0.67em 0;
   }
@@ -99,10 +110,8 @@ body {
 
   &__title {
     color: $heading-grey;
-    font-size: 70px;
-    font-weight: bold;
+
     margin: 0.67em 0;
-    text-transform: uppercase;
 
     padding: 0;
   }
@@ -189,30 +198,24 @@ body {
   }
 
   &__title {
-    text-transform: uppercase;
     text-align: end;
-    font-size: 70px;
-    font-weight: bold;
     color: $heading-grey;
     margin: 0.67em 0;
 
     padding: 0;
   }
 
-  &__section-top,
-  &__section-bottom {
+  &__section {
     width: 80%;
-    min-width: 550px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: end;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    flex: 1 1 10em;
     align-items: center;
     margin: 1em;
   }
@@ -229,7 +232,7 @@ body {
 
 .contacts {
   background: darken($background-light-grey, 5%);
-  padding: 20px 0 20px 0;
+  padding: 1px 0 20px 0;
 
   height: 800px;
 
@@ -244,10 +247,7 @@ body {
   }
 
   &__title {
-    text-transform: uppercase;
     text-align: start;
-    font-size: 70px;
-    font-weight: bold;
     color: $heading-grey;
     margin: 0.67em 0;
 
@@ -269,7 +269,7 @@ body {
   &__comment-add-section,
   &__schedule-form {
     margin: 1em;
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 5px;
     box-shadow: 0px 0px 20px 0px $link-grey;
 
@@ -364,11 +364,14 @@ body {
 
   .about {
     &__wrapper {
-      width: 90vw;
+      width: 80%;
     }
   }
 
   .projects {
+    &__wrapper {
+      width: 100%;
+    }
     &__title {
       text-align: center;
     }
@@ -385,27 +388,27 @@ body {
 
   .skills {
     &__wrapper {
-      width: 90vw;
+      width: 100%;
     }
 
     &__title {
       text-align: center;
     }
 
-    &__section-top,
-    &__section-bottom {
-      width: 100%;
-    }
-
-    &__item {
-      flex: 1 0 5em;
+    &__section {
+      width: 90%;
     }
   }
 
   .contacts {
+    &__wrapper {
+      width: 100%;
+    }
+
     &__title {
       text-align: center;
     }
+
     &__carousel {
       width: 25em;
     }
@@ -422,6 +425,76 @@ body {
     &__contact-method {
       align-items: center;
       flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 619px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  .navbar {
+    justify-content: center;
+    height: fit-content;
+
+    &__link {
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin: 0 auto;
+      padding: 0.75em;
+    }
+  }
+
+  .projects {
+    padding-top: 1em;
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      max-width: 70%;
+      min-width: 12.5em;
+    }
+
+    &__img {
+      height: 10em;
+    }
+  }
+
+  .skills {
+    padding-top: 1em;
+
+    &__section {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .contacts {
+    padding-top: 1em;
+
+    &__schedule-form,
+    &__comment-add-section {
+      width: 80%;
+
+      input,
+      textarea {
+        width: 100%;
+      }
+    }
+
+    &__calendar {
+      width: auto;
+    }
+
+    &__carousel {
+      width: 80%;
     }
   }
 }
